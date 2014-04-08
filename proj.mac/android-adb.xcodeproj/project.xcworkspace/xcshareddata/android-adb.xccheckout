@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EDB4CD26-9A8C-4444-9ECE-A929D5C59276</string>
+	<key>IDESourceControlProjectName</key>
+	<string>android-adb</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F313D4EC-B7D2-4CBA-ADFD-16E9C733E616</key>
+		<string>https://github.com/mikeweib/Android_ADB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>proj.mac/android-adb.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F313D4EC-B7D2-4CBA-ADFD-16E9C733E616</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mikeweib/Android_ADB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F313D4EC-B7D2-4CBA-ADFD-16E9C733E616</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F313D4EC-B7D2-4CBA-ADFD-16E9C733E616</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Android_ADB</string>
+		</dict>
+	</array>
+</dict>
+</plist>

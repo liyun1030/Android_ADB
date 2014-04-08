@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2559653B17C311160000A970 /* adb.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559650C17C311160000A970 /* adb.c */; };
+		2559653C17C311160000A970 /* adb_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559650E17C311160000A970 /* adb_client.c */; };
+		2559653E17C311160000A970 /* commandline.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559651217C311160000A970 /* commandline.c */; };
+		2559653F17C311160000A970 /* console.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559651317C311160000A970 /* console.c */; };
+		2559654017C311160000A970 /* fdevent.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559651417C311160000A970 /* fdevent.c */; };
+		2559654117C311160000A970 /* file_sync_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559651617C311160000A970 /* file_sync_client.c */; };
+		2559654417C311160000A970 /* get_my_path_darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559651A17C311160000A970 /* get_my_path_darwin.c */; };
+		2559654B17C311160000A970 /* services.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559652617C311160000A970 /* services.c */; };
+		2559654C17C311160000A970 /* sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559652817C311160000A970 /* sockets.c */; };
+		2559655017C311160000A970 /* transport.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559652E17C311160000A970 /* transport.c */; };
+		2559655117C311160000A970 /* transport_local.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559653017C311160000A970 /* transport_local.c */; };
+		2559655217C311160000A970 /* transport_usb.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559653117C311160000A970 /* transport_usb.c */; };
+		2559655617C311160000A970 /* usb_osx.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559653517C311160000A970 /* usb_osx.c */; };
+		2559655717C311160000A970 /* usb_vendors.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559653617C311160000A970 /* usb_vendors.c */; };
+		2559655917C311160000A970 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2559653917C311160000A970 /* utils.c */; };
+		2559655D17C312C80000A970 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559655C17C312C80000A970 /* CoreFoundation.framework */; };
+		2559655F17C312D60000A970 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559655E17C312D60000A970 /* IOKit.framework */; };
+		2559656117C312DF0000A970 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559656017C312DF0000A970 /* Carbon.framework */; };
+		25D5A0AE17C5DFC200DB0F33 /* centraldir.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0A817C5DFC200DB0F33 /* centraldir.c */; };
+		25D5A0AF17C5DFC200DB0F33 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5A0AB17C5DFC200DB0F33 /* private.h */; };
+		25D5A0B117C5DFC200DB0F33 /* zipfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0AD17C5DFC200DB0F33 /* zipfile.c */; };
+		25D5A0FA17C5E06900DB0F33 /* abort_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0BB17C5E06900DB0F33 /* abort_socket.c */; };
+		25D5A0FB17C5E06900DB0F33 /* android_reboot.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0BD17C5E06900DB0F33 /* android_reboot.c */; };
+		25D5A10217C5E06900DB0F33 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0C617C5E06900DB0F33 /* array.c */; };
+		25D5A10417C5E06900DB0F33 /* ashmem-host.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0C817C5E06900DB0F33 /* ashmem-host.c */; };
+		25D5A10617C5E06900DB0F33 /* atomic.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0CA17C5E06900DB0F33 /* atomic.c */; };
+		25D5A10717C5E06900DB0F33 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0CB17C5E06900DB0F33 /* buffer.c */; };
+		25D5A10817C5E06900DB0F33 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5A0CC17C5E06900DB0F33 /* buffer.h */; };
+		25D5A10917C5E06900DB0F33 /* config_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0CD17C5E06900DB0F33 /* config_utils.c */; };
+		25D5A10A17C5E06900DB0F33 /* cpu_info.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0CE17C5E06900DB0F33 /* cpu_info.c */; };
+		25D5A10D17C5E06900DB0F33 /* dlmalloc_stubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D117C5E06900DB0F33 /* dlmalloc_stubs.c */; };
+		25D5A10E17C5E06900DB0F33 /* hashmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D217C5E06900DB0F33 /* hashmap.c */; };
+		25D5A10F17C5E06900DB0F33 /* iosched_policy.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D317C5E06900DB0F33 /* iosched_policy.c */; };
+		25D5A11017C5E06900DB0F33 /* klog.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D417C5E06900DB0F33 /* klog.c */; };
+		25D5A11117C5E06900DB0F33 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D517C5E06900DB0F33 /* list.c */; };
+		25D5A11217C5E06900DB0F33 /* load_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D617C5E06900DB0F33 /* load_file.c */; };
+		25D5A11317C5E06900DB0F33 /* loghack.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5A0D717C5E06900DB0F33 /* loghack.h */; };
+		25D5A11417C5E06900DB0F33 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0D817C5E06900DB0F33 /* memory.c */; };
+		25D5A11617C5E06900DB0F33 /* mspace.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0DB17C5E06900DB0F33 /* mspace.c */; };
+		25D5A11717C5E06900DB0F33 /* native_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0DC17C5E06900DB0F33 /* native_handle.c */; };
+		25D5A11817C5E06900DB0F33 /* open_memstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0DE17C5E06900DB0F33 /* open_memstream.c */; };
+		25D5A11917C5E06900DB0F33 /* partition_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0DF17C5E06900DB0F33 /* partition_utils.c */; };
+		25D5A11A17C5E06900DB0F33 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5A0E017C5E06900DB0F33 /* private.h */; };
+		25D5A11B17C5E06900DB0F33 /* process_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E117C5E06900DB0F33 /* process_name.c */; };
+		25D5A11C17C5E06900DB0F33 /* properties.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E217C5E06900DB0F33 /* properties.c */; };
+		25D5A11D17C5E06900DB0F33 /* qsort_r_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E317C5E06900DB0F33 /* qsort_r_compat.c */; };
+		25D5A11F17C5E06900DB0F33 /* record_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E517C5E06900DB0F33 /* record_stream.c */; };
+		25D5A12017C5E06900DB0F33 /* sched_policy.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E617C5E06900DB0F33 /* sched_policy.c */; };
+		25D5A12117C5E06900DB0F33 /* selector.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E717C5E06900DB0F33 /* selector.c */; };
+		25D5A12217C5E06900DB0F33 /* socket_inaddr_any_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0E817C5E06900DB0F33 /* socket_inaddr_any_server.c */; };
+		25D5A12317C5E06900DB0F33 /* socket_local.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5A0E917C5E06900DB0F33 /* socket_local.h */; };
+		25D5A12417C5E06900DB0F33 /* socket_local_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0EA17C5E06900DB0F33 /* socket_local_client.c */; };
+		25D5A12517C5E06900DB0F33 /* socket_local_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0EB17C5E06900DB0F33 /* socket_local_server.c */; };
+		25D5A12617C5E06900DB0F33 /* socket_loopback_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0EC17C5E06900DB0F33 /* socket_loopback_client.c */; };
+		25D5A12717C5E06900DB0F33 /* socket_loopback_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0ED17C5E06900DB0F33 /* socket_loopback_server.c */; };
+		25D5A12817C5E06900DB0F33 /* socket_network_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0EE17C5E06900DB0F33 /* socket_network_client.c */; };
+		25D5A12917C5E06900DB0F33 /* sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0EF17C5E06900DB0F33 /* sockets.c */; };
+		25D5A12A17C5E06900DB0F33 /* str_parms.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F017C5E06900DB0F33 /* str_parms.c */; };
+		25D5A12B17C5E06900DB0F33 /* strdup16to8.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F117C5E06900DB0F33 /* strdup16to8.c */; };
+		25D5A12C17C5E06900DB0F33 /* strdup8to16.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F217C5E06900DB0F33 /* strdup8to16.c */; };
+		25D5A12D17C5E06900DB0F33 /* threads.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F317C5E06900DB0F33 /* threads.c */; };
+		25D5A12E17C5E06900DB0F33 /* tzfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D5A0F417C5E06900DB0F33 /* tzfile.h */; };
+		25D5A12F17C5E06900DB0F33 /* tzstrftime.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F517C5E06900DB0F33 /* tzstrftime.c */; };
+		25D5A13017C5E06900DB0F33 /* tztime.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F617C5E06900DB0F33 /* tztime.c */; };
+		25D5A13317C5E06900DB0F33 /* zygote.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A0F917C5E06900DB0F33 /* zygote.c */; };
+		25D5A13417C5E53200DB0F33 /* liblibzipfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D5A0A217C5DFA800DB0F33 /* liblibzipfile.a */; };
+		25D5A13617C5E8FB00DB0F33 /* dlmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 25D5A13517C5E8FB00DB0F33 /* dlmalloc.c */; };
+		25D5A13717C5EB2F00DB0F33 /* liblibcutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D5A0B617C5E05700DB0F33 /* liblibcutils.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		255964F717C310880000A970 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		255964F917C310880000A970 /* android-adb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "android-adb"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2559650C17C311160000A970 /* adb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adb.c; sourceTree = "<group>"; };
+		2559650D17C311160000A970 /* adb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adb.h; sourceTree = "<group>"; };
+		2559650E17C311160000A970 /* adb_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adb_client.c; sourceTree = "<group>"; };
+		2559650F17C311160000A970 /* adb_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adb_client.h; sourceTree = "<group>"; };
+		2559651217C311160000A970 /* commandline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commandline.c; sourceTree = "<group>"; };
+		2559651317C311160000A970 /* console.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = console.c; sourceTree = "<group>"; };
+		2559651417C311160000A970 /* fdevent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fdevent.c; sourceTree = "<group>"; };
+		2559651517C311160000A970 /* fdevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fdevent.h; sourceTree = "<group>"; };
+		2559651617C311160000A970 /* file_sync_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file_sync_client.c; sourceTree = "<group>"; };
+		2559651A17C311160000A970 /* get_my_path_darwin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = get_my_path_darwin.c; sourceTree = "<group>"; };
+		2559652117C311160000A970 /* mutex_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex_list.h; sourceTree = "<group>"; };
+		2559652617C311160000A970 /* services.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = services.c; sourceTree = "<group>"; };
+		2559652817C311160000A970 /* sockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sockets.c; sourceTree = "<group>"; };
+		2559652A17C311160000A970 /* sysdeps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdeps.h; sourceTree = "<group>"; };
+		2559652E17C311160000A970 /* transport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport.c; sourceTree = "<group>"; };
+		2559652F17C311160000A970 /* transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport.h; sourceTree = "<group>"; };
+		2559653017C311160000A970 /* transport_local.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_local.c; sourceTree = "<group>"; };
+		2559653117C311160000A970 /* transport_usb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_usb.c; sourceTree = "<group>"; };
+		2559653517C311160000A970 /* usb_osx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_osx.c; sourceTree = "<group>"; };
+		2559653617C311160000A970 /* usb_vendors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_vendors.c; sourceTree = "<group>"; };
+		2559653717C311160000A970 /* usb_vendors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb_vendors.h; sourceTree = "<group>"; };
+		2559653917C311160000A970 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		2559653A17C311160000A970 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		2559655C17C312C80000A970 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2559655E17C312D60000A970 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		2559656017C312DF0000A970 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		25D5A0A217C5DFA800DB0F33 /* liblibzipfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibzipfile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D5A0A817C5DFC200DB0F33 /* centraldir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = centraldir.c; sourceTree = "<group>"; };
+		25D5A0AB17C5DFC200DB0F33 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		25D5A0AD17C5DFC200DB0F33 /* zipfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zipfile.c; sourceTree = "<group>"; };
+		25D5A0B617C5E05700DB0F33 /* liblibcutils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibcutils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D5A0BB17C5E06900DB0F33 /* abort_socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = abort_socket.c; sourceTree = "<group>"; };
+		25D5A0BD17C5E06900DB0F33 /* android_reboot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = android_reboot.c; sourceTree = "<group>"; };
+		25D5A0C617C5E06900DB0F33 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		25D5A0C817C5E06900DB0F33 /* ashmem-host.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ashmem-host.c"; sourceTree = "<group>"; };
+		25D5A0CA17C5E06900DB0F33 /* atomic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = atomic.c; sourceTree = "<group>"; };
+		25D5A0CB17C5E06900DB0F33 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		25D5A0CC17C5E06900DB0F33 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		25D5A0CD17C5E06900DB0F33 /* config_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config_utils.c; sourceTree = "<group>"; };
+		25D5A0CE17C5E06900DB0F33 /* cpu_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_info.c; sourceTree = "<group>"; };
+		25D5A0D117C5E06900DB0F33 /* dlmalloc_stubs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlmalloc_stubs.c; sourceTree = "<group>"; };
+		25D5A0D217C5E06900DB0F33 /* hashmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashmap.c; sourceTree = "<group>"; };
+		25D5A0D317C5E06900DB0F33 /* iosched_policy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iosched_policy.c; sourceTree = "<group>"; };
+		25D5A0D417C5E06900DB0F33 /* klog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = klog.c; sourceTree = "<group>"; };
+		25D5A0D517C5E06900DB0F33 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		25D5A0D617C5E06900DB0F33 /* load_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load_file.c; sourceTree = "<group>"; };
+		25D5A0D717C5E06900DB0F33 /* loghack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loghack.h; sourceTree = "<group>"; };
+		25D5A0D817C5E06900DB0F33 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
+		25D5A0DB17C5E06900DB0F33 /* mspace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mspace.c; sourceTree = "<group>"; };
+		25D5A0DC17C5E06900DB0F33 /* native_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = native_handle.c; sourceTree = "<group>"; };
+		25D5A0DE17C5E06900DB0F33 /* open_memstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = open_memstream.c; sourceTree = "<group>"; };
+		25D5A0DF17C5E06900DB0F33 /* partition_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = partition_utils.c; sourceTree = "<group>"; };
+		25D5A0E017C5E06900DB0F33 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		25D5A0E117C5E06900DB0F33 /* process_name.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = process_name.c; sourceTree = "<group>"; };
+		25D5A0E217C5E06900DB0F33 /* properties.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = properties.c; sourceTree = "<group>"; };
+		25D5A0E317C5E06900DB0F33 /* qsort_r_compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qsort_r_compat.c; sourceTree = "<group>"; };
+		25D5A0E517C5E06900DB0F33 /* record_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = record_stream.c; sourceTree = "<group>"; };
+		25D5A0E617C5E06900DB0F33 /* sched_policy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sched_policy.c; sourceTree = "<group>"; };
+		25D5A0E717C5E06900DB0F33 /* selector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selector.c; sourceTree = "<group>"; };
+		25D5A0E817C5E06900DB0F33 /* socket_inaddr_any_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_inaddr_any_server.c; sourceTree = "<group>"; };
+		25D5A0E917C5E06900DB0F33 /* socket_local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket_local.h; sourceTree = "<group>"; };
+		25D5A0EA17C5E06900DB0F33 /* socket_local_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_local_client.c; sourceTree = "<group>"; };
+		25D5A0EB17C5E06900DB0F33 /* socket_local_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_local_server.c; sourceTree = "<group>"; };
+		25D5A0EC17C5E06900DB0F33 /* socket_loopback_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_loopback_client.c; sourceTree = "<group>"; };
+		25D5A0ED17C5E06900DB0F33 /* socket_loopback_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_loopback_server.c; sourceTree = "<group>"; };
+		25D5A0EE17C5E06900DB0F33 /* socket_network_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket_network_client.c; sourceTree = "<group>"; };
+		25D5A0EF17C5E06900DB0F33 /* sockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sockets.c; sourceTree = "<group>"; };
+		25D5A0F017C5E06900DB0F33 /* str_parms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = str_parms.c; sourceTree = "<group>"; };
+		25D5A0F117C5E06900DB0F33 /* strdup16to8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strdup16to8.c; sourceTree = "<group>"; };
+		25D5A0F217C5E06900DB0F33 /* strdup8to16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strdup8to16.c; sourceTree = "<group>"; };
+		25D5A0F317C5E06900DB0F33 /* threads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = threads.c; sourceTree = "<group>"; };
+		25D5A0F417C5E06900DB0F33 /* tzfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tzfile.h; sourceTree = "<group>"; };
+		25D5A0F517C5E06900DB0F33 /* tzstrftime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tzstrftime.c; sourceTree = "<group>"; };
+		25D5A0F617C5E06900DB0F33 /* tztime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tztime.c; sourceTree = "<group>"; };
+		25D5A0F917C5E06900DB0F33 /* zygote.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zygote.c; sourceTree = "<group>"; };
+		25D5A13517C5E8FB00DB0F33 /* dlmalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlmalloc.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255964F617C310880000A970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D5A13717C5EB2F00DB0F33 /* liblibcutils.a in Frameworks */,
+				25D5A13417C5E53200DB0F33 /* liblibzipfile.a in Frameworks */,
+				2559656117C312DF0000A970 /* Carbon.framework in Frameworks */,
+				2559655F17C312D60000A970 /* IOKit.framework in Frameworks */,
+				2559655D17C312C80000A970 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25D5A09F17C5DFA800DB0F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25D5A0B317C5E05700DB0F33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		255964EE17C310880000A970 = {
+			isa = PBXGroup;
+			children = (
+				25D5A0BA17C5E06900DB0F33 /* libcutils */,
+				25D5A0A617C5DFC200DB0F33 /* libzipfile */,
+				2559656017C312DF0000A970 /* Carbon.framework */,
+				2559655E17C312D60000A970 /* IOKit.framework */,
+				2559655C17C312C80000A970 /* CoreFoundation.framework */,
+				2559650B17C311160000A970 /* src */,
+				255964FA17C310880000A970 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		255964FA17C310880000A970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				255964F917C310880000A970 /* android-adb */,
+				25D5A0A217C5DFA800DB0F33 /* liblibzipfile.a */,
+				25D5A0B617C5E05700DB0F33 /* liblibcutils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2559650B17C311160000A970 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2559650C17C311160000A970 /* adb.c */,
+				2559650D17C311160000A970 /* adb.h */,
+				2559650E17C311160000A970 /* adb_client.c */,
+				2559650F17C311160000A970 /* adb_client.h */,
+				2559651217C311160000A970 /* commandline.c */,
+				2559651317C311160000A970 /* console.c */,
+				2559651417C311160000A970 /* fdevent.c */,
+				2559651517C311160000A970 /* fdevent.h */,
+				2559651617C311160000A970 /* file_sync_client.c */,
+				2559651A17C311160000A970 /* get_my_path_darwin.c */,
+				2559652117C311160000A970 /* mutex_list.h */,
+				2559652617C311160000A970 /* services.c */,
+				2559652817C311160000A970 /* sockets.c */,
+				2559652A17C311160000A970 /* sysdeps.h */,
+				2559652E17C311160000A970 /* transport.c */,
+				2559652F17C311160000A970 /* transport.h */,
+				2559653017C311160000A970 /* transport_local.c */,
+				2559653117C311160000A970 /* transport_usb.c */,
+				2559653517C311160000A970 /* usb_osx.c */,
+				2559653617C311160000A970 /* usb_vendors.c */,
+				2559653717C311160000A970 /* usb_vendors.h */,
+				2559653917C311160000A970 /* utils.c */,
+				2559653A17C311160000A970 /* utils.h */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		25D5A0A617C5DFC200DB0F33 /* libzipfile */ = {
+			isa = PBXGroup;
+			children = (
+				25D5A0A817C5DFC200DB0F33 /* centraldir.c */,
+				25D5A0AB17C5DFC200DB0F33 /* private.h */,
+				25D5A0AD17C5DFC200DB0F33 /* zipfile.c */,
+			);
+			name = libzipfile;
+			path = ../libzipfile;
+			sourceTree = "<group>";
+		};
+		25D5A0BA17C5E06900DB0F33 /* libcutils */ = {
+			isa = PBXGroup;
+			children = (
+				25D5A13517C5E8FB00DB0F33 /* dlmalloc.c */,
+				25D5A0BB17C5E06900DB0F33 /* abort_socket.c */,
+				25D5A0BD17C5E06900DB0F33 /* android_reboot.c */,
+				25D5A0C617C5E06900DB0F33 /* array.c */,
+				25D5A0C817C5E06900DB0F33 /* ashmem-host.c */,
+				25D5A0CA17C5E06900DB0F33 /* atomic.c */,
+				25D5A0CB17C5E06900DB0F33 /* buffer.c */,
+				25D5A0CC17C5E06900DB0F33 /* buffer.h */,
+				25D5A0CD17C5E06900DB0F33 /* config_utils.c */,
+				25D5A0CE17C5E06900DB0F33 /* cpu_info.c */,
+				25D5A0D117C5E06900DB0F33 /* dlmalloc_stubs.c */,
+				25D5A0D217C5E06900DB0F33 /* hashmap.c */,
+				25D5A0D317C5E06900DB0F33 /* iosched_policy.c */,
+				25D5A0D417C5E06900DB0F33 /* klog.c */,
+				25D5A0D517C5E06900DB0F33 /* list.c */,
+				25D5A0D617C5E06900DB0F33 /* load_file.c */,
+				25D5A0D717C5E06900DB0F33 /* loghack.h */,
+				25D5A0D817C5E06900DB0F33 /* memory.c */,
+				25D5A0DB17C5E06900DB0F33 /* mspace.c */,
+				25D5A0DC17C5E06900DB0F33 /* native_handle.c */,
+				25D5A0DE17C5E06900DB0F33 /* open_memstream.c */,
+				25D5A0DF17C5E06900DB0F33 /* partition_utils.c */,
+				25D5A0E017C5E06900DB0F33 /* private.h */,
+				25D5A0E117C5E06900DB0F33 /* process_name.c */,
+				25D5A0E217C5E06900DB0F33 /* properties.c */,
+				25D5A0E317C5E06900DB0F33 /* qsort_r_compat.c */,
+				25D5A0E517C5E06900DB0F33 /* record_stream.c */,
+				25D5A0E617C5E06900DB0F33 /* sched_policy.c */,
+				25D5A0E717C5E06900DB0F33 /* selector.c */,
+				25D5A0E817C5E06900DB0F33 /* socket_inaddr_any_server.c */,
+				25D5A0E917C5E06900DB0F33 /* socket_local.h */,
+				25D5A0EA17C5E06900DB0F33 /* socket_local_client.c */,
+				25D5A0EB17C5E06900DB0F33 /* socket_local_server.c */,
+				25D5A0EC17C5E06900DB0F33 /* socket_loopback_client.c */,
+				25D5A0ED17C5E06900DB0F33 /* socket_loopback_server.c */,
+				25D5A0EE17C5E06900DB0F33 /* socket_network_client.c */,
+				25D5A0EF17C5E06900DB0F33 /* sockets.c */,
+				25D5A0F017C5E06900DB0F33 /* str_parms.c */,
+				25D5A0F117C5E06900DB0F33 /* strdup16to8.c */,
+				25D5A0F217C5E06900DB0F33 /* strdup8to16.c */,
+				25D5A0F317C5E06900DB0F33 /* threads.c */,
+				25D5A0F417C5E06900DB0F33 /* tzfile.h */,
+				25D5A0F517C5E06900DB0F33 /* tzstrftime.c */,
+				25D5A0F617C5E06900DB0F33 /* tztime.c */,
+				25D5A0F917C5E06900DB0F33 /* zygote.c */,
+			);
+			name = libcutils;
+			path = ../libcutils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25D5A0A017C5DFA800DB0F33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D5A0AF17C5DFC200DB0F33 /* private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25D5A0B417C5E05700DB0F33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D5A10817C5E06900DB0F33 /* buffer.h in Headers */,
+				25D5A11317C5E06900DB0F33 /* loghack.h in Headers */,
+				25D5A11A17C5E06900DB0F33 /* private.h in Headers */,
+				25D5A12317C5E06900DB0F33 /* socket_local.h in Headers */,
+				25D5A12E17C5E06900DB0F33 /* tzfile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		255964F817C310880000A970 /* android-adb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2559650317C310880000A970 /* Build configuration list for PBXNativeTarget "android-adb" */;
+			buildPhases = (
+				255964F517C310880000A970 /* Sources */,
+				255964F617C310880000A970 /* Frameworks */,
+				255964F717C310880000A970 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "android-adb";
+			productName = "android-adb";
+			productReference = 255964F917C310880000A970 /* android-adb */;
+			productType = "com.apple.product-type.tool";
+		};
+		25D5A0A117C5DFA800DB0F33 /* libzipfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D5A0A317C5DFA800DB0F33 /* Build configuration list for PBXNativeTarget "libzipfile" */;
+			buildPhases = (
+				25D5A09E17C5DFA800DB0F33 /* Sources */,
+				25D5A09F17C5DFA800DB0F33 /* Frameworks */,
+				25D5A0A017C5DFA800DB0F33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libzipfile;
+			productName = libzipfile;
+			productReference = 25D5A0A217C5DFA800DB0F33 /* liblibzipfile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		25D5A0B517C5E05700DB0F33 /* libcutils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D5A0B717C5E05700DB0F33 /* Build configuration list for PBXNativeTarget "libcutils" */;
+			buildPhases = (
+				25D5A0B217C5E05700DB0F33 /* Sources */,
+				25D5A0B317C5E05700DB0F33 /* Frameworks */,
+				25D5A0B417C5E05700DB0F33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcutils;
+			productName = libcutils;
+			productReference = 25D5A0B617C5E05700DB0F33 /* liblibcutils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		255964F017C310880000A970 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Guge;
+			};
+			buildConfigurationList = 255964F317C310880000A970 /* Build configuration list for PBXProject "android-adb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 255964EE17C310880000A970;
+			productRefGroup = 255964FA17C310880000A970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				255964F817C310880000A970 /* android-adb */,
+				25D5A0A117C5DFA800DB0F33 /* libzipfile */,
+				25D5A0B517C5E05700DB0F33 /* libcutils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		255964F517C310880000A970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559653B17C311160000A970 /* adb.c in Sources */,
+				2559653C17C311160000A970 /* adb_client.c in Sources */,
+				2559653E17C311160000A970 /* commandline.c in Sources */,
+				2559653F17C311160000A970 /* console.c in Sources */,
+				2559654017C311160000A970 /* fdevent.c in Sources */,
+				2559654117C311160000A970 /* file_sync_client.c in Sources */,
+				2559654417C311160000A970 /* get_my_path_darwin.c in Sources */,
+				2559654B17C311160000A970 /* services.c in Sources */,
+				2559654C17C311160000A970 /* sockets.c in Sources */,
+				2559655017C311160000A970 /* transport.c in Sources */,
+				2559655117C311160000A970 /* transport_local.c in Sources */,
+				2559655217C311160000A970 /* transport_usb.c in Sources */,
+				2559655617C311160000A970 /* usb_osx.c in Sources */,
+				2559655717C311160000A970 /* usb_vendors.c in Sources */,
+				2559655917C311160000A970 /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25D5A09E17C5DFA800DB0F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D5A0AE17C5DFC200DB0F33 /* centraldir.c in Sources */,
+				25D5A0B117C5DFC200DB0F33 /* zipfile.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25D5A0B217C5E05700DB0F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D5A0FA17C5E06900DB0F33 /* abort_socket.c in Sources */,
+				25D5A0FB17C5E06900DB0F33 /* android_reboot.c in Sources */,
+				25D5A10217C5E06900DB0F33 /* array.c in Sources */,
+				25D5A10417C5E06900DB0F33 /* ashmem-host.c in Sources */,
+				25D5A10617C5E06900DB0F33 /* atomic.c in Sources */,
+				25D5A10717C5E06900DB0F33 /* buffer.c in Sources */,
+				25D5A10917C5E06900DB0F33 /* config_utils.c in Sources */,
+				25D5A10A17C5E06900DB0F33 /* cpu_info.c in Sources */,
+				25D5A10D17C5E06900DB0F33 /* dlmalloc_stubs.c in Sources */,
+				25D5A10E17C5E06900DB0F33 /* hashmap.c in Sources */,
+				25D5A10F17C5E06900DB0F33 /* iosched_policy.c in Sources */,
+				25D5A11017C5E06900DB0F33 /* klog.c in Sources */,
+				25D5A11117C5E06900DB0F33 /* list.c in Sources */,
+				25D5A11217C5E06900DB0F33 /* load_file.c in Sources */,
+				25D5A11417C5E06900DB0F33 /* memory.c in Sources */,
+				25D5A11617C5E06900DB0F33 /* mspace.c in Sources */,
+				25D5A11717C5E06900DB0F33 /* native_handle.c in Sources */,
+				25D5A11817C5E06900DB0F33 /* open_memstream.c in Sources */,
+				25D5A11917C5E06900DB0F33 /* partition_utils.c in Sources */,
+				25D5A11B17C5E06900DB0F33 /* process_name.c in Sources */,
+				25D5A11C17C5E06900DB0F33 /* properties.c in Sources */,
+				25D5A11D17C5E06900DB0F33 /* qsort_r_compat.c in Sources */,
+				25D5A11F17C5E06900DB0F33 /* record_stream.c in Sources */,
+				25D5A12017C5E06900DB0F33 /* sched_policy.c in Sources */,
+				25D5A12117C5E06900DB0F33 /* selector.c in Sources */,
+				25D5A12217C5E06900DB0F33 /* socket_inaddr_any_server.c in Sources */,
+				25D5A12417C5E06900DB0F33 /* socket_local_client.c in Sources */,
+				25D5A12517C5E06900DB0F33 /* socket_local_server.c in Sources */,
+				25D5A12617C5E06900DB0F33 /* socket_loopback_client.c in Sources */,
+				25D5A12717C5E06900DB0F33 /* socket_loopback_server.c in Sources */,
+				25D5A12817C5E06900DB0F33 /* socket_network_client.c in Sources */,
+				25D5A12917C5E06900DB0F33 /* sockets.c in Sources */,
+				25D5A12A17C5E06900DB0F33 /* str_parms.c in Sources */,
+				25D5A12B17C5E06900DB0F33 /* strdup16to8.c in Sources */,
+				25D5A12C17C5E06900DB0F33 /* strdup8to16.c in Sources */,
+				25D5A12D17C5E06900DB0F33 /* threads.c in Sources */,
+				25D5A12F17C5E06900DB0F33 /* tzstrftime.c in Sources */,
+				25D5A13017C5E06900DB0F33 /* tztime.c in Sources */,
+				25D5A13317C5E06900DB0F33 /* zygote.c in Sources */,
+				25D5A13617C5E8FB00DB0F33 /* dlmalloc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2559650117C310880000A970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"ADB_HOST=1",
+					HAVE_FORKEXEC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2559650217C310880000A970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ADB_HOST=1",
+					HAVE_FORKEXEC,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2559650417C310880000A970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/..\"";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src\"";
+			};
+			name = Debug;
+		};
+		2559650517C310880000A970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/..\"";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../src\"";
+			};
+			name = Release;
+		};
+		25D5A0A417C5DFA800DB0F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/..\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25D5A0A517C5DFA800DB0F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/..\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		25D5A0B817C5E05700DB0F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"ADB_HOST=1",
+					HAVE_FORKEXEC,
+					"ANDROID_SMP=0",
+					HAVE_PTHREADS,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/..\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25D5A0B917C5E05700DB0F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ADB_HOST=1",
+					ADB_HOST_ON_TARGET,
+					"ANDROID_SMP=0",
+					HAVE_PTHREADS,
+					HAVE_FORKEXEC,
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/..\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		255964F317C310880000A970 /* Build configuration list for PBXProject "android-adb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559650117C310880000A970 /* Debug */,
+				2559650217C310880000A970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2559650317C310880000A970 /* Build configuration list for PBXNativeTarget "android-adb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559650417C310880000A970 /* Debug */,
+				2559650517C310880000A970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25D5A0A317C5DFA800DB0F33 /* Build configuration list for PBXNativeTarget "libzipfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25D5A0A417C5DFA800DB0F33 /* Debug */,
+				25D5A0A517C5DFA800DB0F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25D5A0B717C5E05700DB0F33 /* Build configuration list for PBXNativeTarget "libcutils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25D5A0B817C5E05700DB0F33 /* Debug */,
+				25D5A0B917C5E05700DB0F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 255964F017C310880000A970 /* Project object */;
+}
